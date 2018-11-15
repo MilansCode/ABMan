@@ -21,7 +21,7 @@ public class BombSpawner : MonoBehaviour{
             var newBomb =  Instantiate(bomb, spawnPos, Quaternion.identity) as GameObject;
             newBomb.GetComponent<Bomb>().firePower = firePower;
             numberOfBombs--;
-            Invoke("AddBomb", 1f);
+            Invoke("AddBomb", 1);
         }
 	}
 
